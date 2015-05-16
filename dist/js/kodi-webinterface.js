@@ -58177,7 +58177,7 @@ this.Kodi.module("StateApp.Kodi", function(StateApp, App, Backbone, Marionette, 
           break;
         case 'Input.OnInputFinished':
           clearTimeout(App.inputTimeout);
-          App.execute("inpute:textbox:close");
+          App.execute("input:textbox:close");
           break;
         case 'System.OnQuit':
           App.execute("notification:show", t.gettext("Kodi has quit"));
